@@ -1,0 +1,409 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+
+}
+
+.background-img {
+    background-image: url(../img/back2.png);
+    background-position: center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-img div {
+    display: inline-block;
+    height: 100vh;
+    align-content: center;
+    padding: 0 10vh;
+    margin: 0px;
+}
+
+.m-index div h1 {
+    font-size: 5.5rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.m-index div span {
+    display: inline-block;
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-weight: 600;
+}
+
+.m-index div #s2 {
+    font-size: 2rem;
+    color: rgb(94, 94, 94);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.inf-index {
+    background-color: #0000009f;
+}
+
+
+
+/* 
+NAV
+================================================== */
+header {
+    position: sticky;
+    top: .1px;
+    background-color: rgb(19, 19, 19);
+    height: 10vh;
+    z-index: 2;
+    align-content: center;
+}
+
+
+
+.menu nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    gap: 20px;
+}
+
+.menu nav ul li {
+    font-size: 1.5rem;
+    color: rgb(216, 214, 214);
+}
+
+.menu nav ul a {
+    text-decoration: none;
+}
+
+/* 
+Footer
+*/
+
+footer div {
+    background-color: rgb(30, 28, 28);
+    color: aliceblue;
+    text-transform: uppercase;
+
+}
+
+footer div p {
+    font-size: 1.2rem;
+    padding: 2vh;
+    text-align: center;
+}
+
+.wsp img {
+    width: 50px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 3;
+    filter: drop-shadow(2);
+}
+
+
+/* 
+Info
+*/
+
+.inf-index {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "txt img"
+        "txt img";
+}
+
+.inf-index .txt {
+    display: flex;
+    grid-area: txt;
+}
+
+.inf-index .txt div h2 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: aliceblue;
+    font-size: 3rem;
+    height: 100vh;
+    background-color: rgb(30, 28, 28);
+}
+
+.inf-index .txt div p {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    height: 100vh;
+}
+
+.inf-index .img {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inf-index .img img {
+    width: 80%;
+    box-shadow: 2px 3px 10px black;
+}
+
+/* 
+Catalogo banner index
+*/
+
+.catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.catalogo div img {
+    width: 100px;
+    margin: 30px 0;
+}
+
+.catalogo div h3 {
+    font-size: 3rem;
+}
+
+
+/* 
+Productos
+*/
+
+.productos .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.container .column-1,
+.column-2,
+.column-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 20px;
+}
+
+.container span {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small-img-wrapper {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    z-index: 1;
+    box-shadow: 2px 2px 5px black;
+}
+
+/* 
+Catalogo page
+*/
+.card {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card img {
+
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+/* 
+Portafolio page
+*/
+
+.contenedor-portafolio {
+    height: 90vh;
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 23%);
+    row-gap: 1.5rem;
+    align-content: center;
+}
+
+
+.contenedor-portafolio div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.contenedor-portafolio .img-dos,
+.contenedor-portafolio .img-cinco {
+    display: none;
+}
+
+/* 
+ideas page
+*/
+
+
+
+
+
+/*
+portafolio page
+*/
+@media screen and (min-width:600px) {
+    .contenedor-portafolio {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        column-gap: 1.5rem;
+    }
+
+    .contenedor-portafolio .img-cuatro {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contenedor-portafolio .img-dos,
+    .contenedor-portafolio .img-cinco {
+        display: block;
+    }
+
+    .contenedor-portafolio {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 30% 20%;
+
+    }
+
+    .contenedor-portafolio .img-uno,
+    .contenedor-portafolio .img-tres {
+        grid-row: span 2;
+    }
+
+    .contenedor-portafolio .img-dos,
+    .contenedor-portafolio .img-cuatro {
+        grid-column: span 1;
+    }
+
+    .contenedor-portafolio .img-cinco {
+        grid-column: span 3;
+    }
+
+
+}
+
+
+
+
+/* 
+mq movil index
+*/
+@media (max-width: 668px) {
+    .background-img div {
+        padding: 5vh;
+        width: 75%;
+    }
+
+    .m-index div h1 {
+        font-size: 2.5rem;
+    }
+
+    .m-index div span {
+        font-size: 1.5rem;
+    }
+
+    
+
+    .m-index div #s2 {
+        font-size: 1.5rem;
+    
+    }
+
+    .menu nav ul li {
+        font-size: 12px;
+    }
+
+    .inf-index .txt div h2 {
+        font-size: 1.5rem;
+    }
+
+    .inf-index .txt div p {
+        font-size: 1rem;
+    }
+
+    .inf-index .img {
+        display: none;
+    }
+
+    .container .column-1,
+    .column-2,
+    .column-3 {
+        margin: 0px;
+    }
+
+    .small-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container span {
+        font-size: 1.5rem;
+    }
+
+
+    .wsp img {
+        width: 50px;
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+        z-index: 3;
+        filter: drop-shadow(2);
+    }
+}
