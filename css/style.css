@@ -164,20 +164,28 @@ Catalogo banner index
 */
 
 .catalogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    text-align: center;
+    display: none;
     gap: 20px;
+    background-color: rgb(255, 255, 255);
 }
 
+.catalogo div a{
+    
+    text-decoration: none;
+    color: black;
+    align-items: center
+}
 
 .catalogo div img {
     width: 100px;
-    margin: 30px 0;
+    align-content: center;
 }
 
 .catalogo div h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 
@@ -189,8 +197,9 @@ Productos
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(30, 28, 28);
+    color: aliceblue;
+    
 }
 
 .container .column-1,
@@ -251,7 +260,6 @@ Catalogo page
     text-align: center;
 }
 .card img {
-
     object-fit: cover;
     width: 100%;
     height: auto;
@@ -263,83 +271,26 @@ Catalogo page
 Portafolio page
 */
 
-.contenedor-portafolio {
-    height: 90vh;
-    margin: 20px 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 23%);
-    row-gap: 1.5rem;
-    align-content: center;
-}
-
-
-.contenedor-portafolio div img {
+.img-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px; 
+  }
+  
+  
+  .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-
-.contenedor-portafolio .img-dos,
-.contenedor-portafolio .img-cinco {
-    display: none;
-}
-
-/* 
-ideas page
-*/
-
-
-
-
-
-/*
-portafolio page
-*/
-@media screen and (min-width:600px) {
-    .contenedor-portafolio {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50%);
-        column-gap: 1.5rem;
-    }
-
-    .contenedor-portafolio .img-cuatro {
-        grid-column: span 2;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .contenedor-portafolio .img-dos,
-    .contenedor-portafolio .img-cinco {
-        display: block;
-    }
-
-    .contenedor-portafolio {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 30% 30% 20%;
-
-    }
-
-    .contenedor-portafolio .img-uno,
-    .contenedor-portafolio .img-tres {
-        grid-row: span 2;
-    }
-
-    .contenedor-portafolio .img-dos,
-    .contenedor-portafolio .img-cuatro {
-        grid-column: span 1;
-    }
-
-    .contenedor-portafolio .img-cinco {
-        grid-column: span 3;
-    }
-
-
-}
-
-
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  
+  .img-container:hover img {
+    transform: scale(1.1); 
+  }
+  
+  
 
 
 /* 
