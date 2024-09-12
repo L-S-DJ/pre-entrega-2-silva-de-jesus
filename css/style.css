@@ -5,6 +5,18 @@
 
 }
 
+.git{
+    text-align: center;
+    height: 5vh;
+    
+}
+
+.git a {
+    text-decoration: none;
+    color: rgb(0, 183, 255);
+}
+
+
 .background-img {
     background-image: url(../img/back2.png);
     background-position: center;
