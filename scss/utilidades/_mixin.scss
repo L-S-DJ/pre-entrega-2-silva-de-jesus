@@ -1,0 +1,8 @@
+@import "./variables";
+
+@mixin header-footer ($height){
+    background-color:$background-uno;
+    height: $height;
+    z-index: 2;
+    align-content:center;
+}

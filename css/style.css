@@ -1,373 +1,251 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: Roboto;
-
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto;
 }
-
-.git{
-    text-align: center;
-    height: 5vh;
-    
-}
-
-.git a {
-    text-decoration: none;
-    color: rgb(0, 183, 255); 
-    font-size: 1.5rem;
-}
-
 
 .background-img {
-    background-image: url(../img/back2.png);
-    background-position: center;
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../img/back2.png);
+  background-position: center;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 .background-img div {
-    display: inline-block;
-    height: 100vh;
-    align-content: center;
-    padding: 0 10vh;
-    margin: 0px;
+  display: inline-block;
+  height: 100vh;
+  align-content: center;
+  padding: 0 10vh;
+  margin: 0;
 }
 
-.m-index div h1 {
-    font-size: 5.5rem;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-weight: 700;
-
+.m-index h1 {
+  font-size: 5.5rem;
+  color: rgb(225, 237, 237);
+  text-transform: uppercase;
+  font-weight: 700;
 }
-
-.m-index div span {
-    display: inline-block;
-    font-size: 4rem;
-    color: white;
-    text-transform: uppercase;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    font-weight: 600;
+.m-index span {
+  display: inline-block;
+  font-size: 4rem;
+  color: rgb(225, 237, 237);
+  text-transform: uppercase;
+  font-weight: 600;
 }
-
-.m-index div #s2 {
-    font-size: 2rem;
-    color: rgb(94, 94, 94);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-}
-
-.inf-index {
-    background-color: #0000009f;
-}
-
-
-
-/* 
-NAV
-================================================== */
-header {
-    position: sticky;
-    top: .1px;
-    background-color: rgb(19, 19, 19);
-    height: 10vh;
-    z-index: 2;
-    align-content: center;
-}
-
-
-
-.menu nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    gap: 20px;
-}
-
-.menu nav ul li {
-    font-size: 1.5rem;
-    color: rgb(216, 214, 214);
-}
-
-.menu nav ul a {
-    text-decoration: none;
-}
-
-/* 
-Footer
-*/
-
-footer div {
-    background-color: rgb(30, 28, 28);
-    color: aliceblue;
-    text-transform: uppercase;
-
-}
-
-footer div p {
-    font-size: 1.2rem;
-    padding: 2vh;
-    text-align: center;
+.m-index .span-especial {
+  font-size: 2rem;
+  color: rgb(154, 165, 170);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .wsp img {
+  width: 50px;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 3;
+  filter: drop-shadow(2);
+}
+
+.inf-index {
+  background-color: rgb(51, 69, 111);
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "txt img" "txt img";
+}
+.inf-index .txt {
+  display: flex;
+  grid-area: txt;
+}
+.inf-index .txt h2 {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: aliceblue;
+  font-size: 3rem;
+  height: 100vh;
+  background-color: rgb(22, 32, 68);
+}
+.inf-index .txt p {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: aliceblue;
+  font-size: 1.5rem;
+  height: 100vh;
+}
+.inf-index .img {
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inf-index .img img {
+  width: 80%;
+  box-shadow: 2px 3px 10px black;
+}
+
+.img-container .small-img-wrapper, .img-container, .productos .container .column-1, .productos .container .column-2, .productos .container .column-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productos .container .column-1, .productos .container .column-2, .productos .container .column-3 {
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+
+.productos .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  background-color: rgb(4, 16, 36);
+  color: rgb(225, 237, 237);
+}
+.productos .container span {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+.img-container .large-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-container .small-img-wrapper {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-container .small-img-wrapper .small-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 1;
+  box-shadow: 2px 2px 5px black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto;
+}
+
+header {
+  background-color: rgb(4, 16, 36);
+  height: 11vh;
+  z-index: 2;
+  align-content: center;
+  position: sticky;
+  top: 0;
+}
+header .menu nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  gap: 20px;
+}
+header .menu nav ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(225, 237, 237);
+}
+
+footer {
+  background-color: rgb(4, 16, 36);
+  height: 11vh;
+  z-index: 2;
+  align-content: center;
+}
+footer div p {
+  font-size: 1.2rem;
+  padding: 2vh;
+  text-transform: uppercase;
+  text-align: center;
+  color: aliceblue;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 668px) {
+  header .menu nav ul li a {
+    font-size: 1.2rem;
+  }
+  .background-img div {
+    padding: 5vh;
+    width: 75%;
+  }
+  .inf-index {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "txt";
+  }
+  .inf-index .txt h2 {
+    font-size: 1.5rem;
+  }
+  .inf-index .txt p {
+    font-size: 1rem;
+  }
+  .inf-index .img {
+    display: none;
+  }
+  .m-index h1 {
+    font-size: 2.5rem;
+  }
+  .m-index span {
+    font-size: 1.5rem;
+  }
+  .m-index span.span-especial {
+    font-size: 1.3rem;
+  }
+  .menu nav ul li a {
+    font-size: 16px;
+  }
+  .productos .container {
+    grid-template-columns: 1fr;
+  }
+  .wsp img {
     width: 50px;
     position: fixed;
     right: 2%;
     bottom: 2%;
     z-index: 3;
     filter: drop-shadow(2);
-}
-
-
-/* 
-Info
-*/
-
-.inf-index {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "txt img"
-        "txt img";
-}
-
-.inf-index .txt {
-    display: flex;
-    grid-area: txt;
-}
-
-.inf-index .txt div h2 {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    color: aliceblue;
-    font-size: 3rem;
-    height: 100vh;
-    background-color: rgb(30, 28, 28);
-}
-
-.inf-index .txt div p {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    color: aliceblue;
-    font-size: 1.5rem;
-    height: 100vh;
-}
-
-.inf-index .img {
-    grid-area: img;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inf-index .img img {
-    width: 80%;
-    box-shadow: 2px 3px 10px black;
-}
-
-/* 
-Catalogo banner index
-*/
-
-.catalogo {
-    width: 100%;
-    text-align: center;
-    display: none;
-    gap: 20px;
-    background-color: rgb(255, 255, 255);
-}
-
-.catalogo div a{
-    
-    text-decoration: none;
-    color: black;
-    align-items: center
-}
-
-.catalogo div img {
-    width: 100px;
-    align-content: center;
-}
-
-.catalogo div h3 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-
-
-/* 
-Productos
-*/
-
-.productos .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0;
-    background-color: rgb(30, 28, 28);
-    color: aliceblue;
-    
-}
-
-.container .column-1,
-.column-2,
-.column-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    margin: 20px;
-}
-
-.container span {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.img-container {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.large-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.small-img-wrapper {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.small-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    z-index: 1;
-    box-shadow: 2px 2px 5px black;
-}
-
-/* 
-Catalogo page
-*/
-.card {
-    margin-bottom: 20px;
-    text-align: center;
-}
-.card img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-}
-
-
-/* 
-Portafolio page
-*/
-
-.img-container {
-    position: relative;
-    overflow: hidden;
-    height: 300px; 
   }
-  
-  
-  .img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  
-  .img-container:hover img {
-    transform: scale(1.1); 
-  }
-  
-  
-
-
-/* 
-mq movil index
-*/
-@media (max-width: 668px) {
-    .background-img div {
-        padding: 5vh;
-        width: 75%;
-    }
-
-    .m-index div h1 {
-        font-size: 2.5rem;
-    }
-
-    .m-index div span {
-        font-size: 1.5rem;
-    }
-
-    
-
-    .m-index div #s2 {
-        font-size: 1.5rem;
-    
-    }
-
-    .menu nav ul li {
-        font-size: 12px;
-    }
-
-    .inf-index .txt div h2 {
-        font-size: 1.5rem;
-    }
-
-    .inf-index .txt div p {
-        font-size: 1rem;
-    }
-
-    .inf-index .img {
-        display: none;
-    }
-
-    .container .column-1,
-    .column-2,
-    .column-3 {
-        margin: 0px;
-    }
-
-    .small-img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .container span {
-        font-size: 1.5rem;
-    }
-
-
-    .wsp img {
-        width: 50px;
-        position: fixed;
-        right: 2%;
-        bottom: 2%;
-        z-index: 3;
-        filter: drop-shadow(2);
-    }
 }
+
+/*# sourceMappingURL=style.css.map */

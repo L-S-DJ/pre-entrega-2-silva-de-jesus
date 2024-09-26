@@ -1,0 +1,40 @@
+@import "../utilidades/mixin";
+@import "../utilidades/reset";
+
+header{
+    @include header-footer($height:11vh);
+    position: sticky;
+    top: 0;
+    .menu{
+        nav{
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content:flex-end;
+                padding-right: 20px;
+                gap: 20px;
+                li{
+                    a {
+                        font-size: 1.5rem;
+                        text-decoration: none;
+                        color: $font-color-h1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    @include header-footer($height:11vh);
+
+    div{
+        p{
+            font-size: 1.2rem;
+            padding: 2vh;
+            text-transform: uppercase;
+            text-align: center;
+            color: aliceblue;
+        }
+    }
+}

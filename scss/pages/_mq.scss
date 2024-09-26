@@ -1,0 +1,87 @@
+@import "../utilidades/variables";
+
+//mq index
+@media (max-width: 668px) {
+    header{
+        .menu{
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .background-img {
+      div {
+        padding: 5vh;
+        width: 75%;
+      }
+    }
+  
+    .inf-index {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "txt";
+  
+      .txt {
+        h2 {
+          font-size: $font-size-h2;
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+      }
+  
+      .img {
+        display: none;
+      }
+    }
+  
+    .m-index {
+      h1 {
+        font-size: $font-size-h1;
+      }
+  
+      span {
+        font-size: $font-size-span;
+  
+        &.span-especial {
+          font-size: $font-size-especial;
+        }
+      }
+    }
+  
+    .menu {
+      nav {
+        ul {
+          li {
+            a {
+              font-size: $font-size-small;
+            }
+          }
+        }
+      }
+    }
+  
+    .productos .container {
+        grid-template-columns: 1fr;
+    }
+
+    .wsp {
+      img {
+        width: $wsp-img-width;
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+        z-index: 3;
+        filter: drop-shadow(2);
+      }
+    }
+  }
