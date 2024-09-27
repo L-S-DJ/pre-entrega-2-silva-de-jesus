@@ -27,7 +27,6 @@ header{
 
 footer{
     @include header-footer($height:11vh);
-
     div{
         p{
             font-size: 1.2rem;
