@@ -200,6 +200,10 @@ footer div p {
   cursor: pointer;
 }
 
+.container-p {
+  height: 75vh;
+}
+
 @media (max-width: 668px) {
   header .menu nav ul li a {
     font-size: 1.2rem;
