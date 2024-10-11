@@ -25,15 +25,38 @@ header{
     }
 }
 
-footer{
-    @include header-footer($height:11vh);
-    div{
-        p{
+footer {
+    background-color: $background-tres; 
+    padding: 2rem 1rem; 
+    
+    div {
+        p {
             font-size: 1.2rem;
-            padding: 2vh;
+            padding: 1rem 0;
             text-transform: uppercase;
-            text-align: center;
             color: aliceblue;
+            margin: 0;
+        }
+
+        a {
+            color: rgb(175, 211, 242);
+            text-decoration: none;
+        }
+    }
+
+    .inf-footer {
+        display: flex;
+        justify-content: space-between; /* Coloca los divs a la izquierda y derecha */
+        align-items: flex-start; /* Alinea el contenido superiormente */
+        padding-top: 1rem;
+
+        .left, .right {
+            flex: 1;
+            p {
+                text-transform: none; /* No capitalizar, para que sea más legible */
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+            }
         }
     }
 }
